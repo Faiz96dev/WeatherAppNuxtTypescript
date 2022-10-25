@@ -1,9 +1,5 @@
 <template>
   <div>
-    <navigation />
-    <div class="flex justify-between">
-    <weather-params />
-    <Calendar/>
-    </div>
+    <NuxtWelcome />
   </div>
 </template>
