@@ -5,4 +5,10 @@ export default defineNuxtConfig({
     buildModules: [
     '@pinia/nuxt',
   ],
+      typescript: {
+    strict: true,
+  },
+    publicRuntimeConfig: {
+    apiKey: process.env.WEATHER_API_KEY,
+  },
 })
