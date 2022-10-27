@@ -17,6 +17,8 @@
         }}
       </div>
       <div class="flex flex-row items-center justify-center mt-6">
+        <img class="h-10 w-10 mr-2" :src="`http://openweathermap.org/img/w/${weatherStore.$state.currentWeather.weather[0].icon}.png`" alt="weather icon">
+
         <div class="font-medium text-6xl">
           {{ Math.ceil(weatherStore.$state.currentWeather.main.temp) }}°
         </div>
