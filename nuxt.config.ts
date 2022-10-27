@@ -3,7 +3,8 @@ export default defineNuxtConfig({
    modules: ['@nuxtjs/tailwindcss'],
    css: ['v-calendar/dist/style.css'],
     buildModules: [
-    '@pinia/nuxt',
+      '@pinia/nuxt',
+      '@nuxtjs/moment'
   ],
       typescript: {
     strict: true,

@@ -1,3 +1,7 @@
+type Clouds = {
+  all: number;
+};
+
 type Sys = {
   type: number;
   id: number;
@@ -16,12 +20,25 @@ type WeatherType = {
   rain: Rain;
   clouds: Clouds;
   dt: number;
+  list: Array<ListItem>
   sys: Sys;
   timezone: number;
   id: number;
   name: string;
   cod: number;
 } | undefined;
+
+type ListItem = {
+  clouds: Clouds;
+  dt: number;
+  dt_txt: string;
+  main: Main;
+  pop: number;
+  sys: Sys;
+  visibility: number;
+  weather: Array<WeatherDetail>;
+  wind: Wind;
+}
 
 type Main = {
   temp: number;
@@ -53,13 +70,10 @@ type WeatherDetail = {
 };
 
 
-
 type Rain = {
   "1h": number;
 };
 
-type Clouds = {
-  all: number;
-};
+
 
 
